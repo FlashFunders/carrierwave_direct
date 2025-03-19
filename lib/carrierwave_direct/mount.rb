@@ -29,14 +29,6 @@ module CarrierWaveDirect
           send(:#{column}).key = k
         end
 
-        def #{column}_key
-          send(:#{column}).key
-        end
-
-        def #{column}_key=(k)
-          send(:#{column}).key = k
-        end
-
         def has_#{column}_upload?
           send(:#{column}).has_key?
         end
